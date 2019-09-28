@@ -1,0 +1,228 @@
+ <html>
+<head>
+  <meta charset="UTF-8">
+
+
+
+
+
+<style type="text/css">
+
+.list_serv {
+    padding: 0 0 28px 20px;
+}
+
+
+
+
+
+.button5{
+	width:130px;
+	cursor:pointer;
+	text-transform:capitalize;
+	border-radius:12px 0 12px 0;
+	background:#0687f9;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+   }
+
+
+.button6
+{
+	width:200px;
+	cursor:pointer;
+	text-transform:capitalize;
+	border-radius:12px 0 12px 0;
+	background: #000;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+
+
+}
+
+.button7
+{
+	width:200px;
+	cursor:pointer;
+	text-transform:capitalize;
+	border-radius:12px 0 12px 0;
+	background: #000;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+
+
+}
+
+.button8
+{
+	width:160px;
+	cursor:pointer;
+	text-transform:capitalize;
+	border-radius:12px 0 12px 0;
+	background: #000;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+
+
+}
+
+
+.button9
+{
+	width:150px;
+	cursor:pointer;
+	text-transform:capitalize;
+	border-radius:12px 0 12px 0;
+	background:#cc0101;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+
+
+}
+
+
+
+</style>
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+
+function OnOff() {
+
+if (document.getElementById("le_texte").style.display == "block")
+document.getElementById("le_texte").style.display = "none";
+else
+document.getElementById("le_texte").style.display = "block";
+}
+
+
+
+ function afficher() {
+
+if (document.getElementById("image").style.display == "block")
+document.getElementById("image").style.display = "none";
+else
+document.getElementById("image").style.display = "block";
+}
+
+
+ function afficher_sous() {
+
+if (document.getElementById("sous_text").style.display == "block")
+document.getElementById("sous_text").style.display = "none";
+else
+document.getElementById("sous_text").style.display = "block";
+}
+
+
+function composant()
+{
+
+ if (document.getElementById("sous_composant").style.display == "block")
+ 	document.getElementById("sous_composant").style.display ="none";
+ else
+ 	document.getElementById("sous_composant").style.display ="block";
+}
+
+
+function equipement()
+{
+   if (document.getElementById("sous_equipment").style.display == "block")
+   	document.getElementById("sous_equipment").style.display ="none";
+   else
+ 	document.getElementById("sous_equipment").style.display ="block";
+}
+
+
+
+
+</script>
+
+</head>
+
+<body> <br>
+
+
+<center>
+
+
+
+ <input type="button" class="button5" value="MOURABAHA" onclick="OnOff();"> <br><br>
+<input type="button"  class="button9" value="schéma générale" onclick="afficher();">
+<span id="le_texte" style="display:none;">
+
+<p>
+
+<p>La Mourabaha est un contrat incluant l’acquisition et la vente d’un bien au prix de revient majoré d’une marge bénéficiaire connue et convenue entre la banque et le client. (البيع بربح معلوم).</p> <br>
+
+<p>La Mourabaha est un mode de financement proposé par Banque Zitouna aussi bien pour les Clients particuliers qu’à ceux des Entreprises pour le financement :</p>
+
+<ul class="list_serv">
+<li>De l’immobilier ;</li>
+<li>De véhicules de tourisme, utilitaires et industriels ;</li>
+<li>Des Besoins d’exploitation : stocks, matières premières, produits intermédiaires…;</li>
+<li>D’Equipements à usage professionnels et / ou privés ;</li>
+</ul>
+
+<table>
+<tr>
+
+<td>  <input type="button" class="button6" value="MOURABAHA AUTOMOBILE" onclick="afficher_sous();"> </td>
+
+<td>   <input type="button" class="button7" value="COMPOSANT MOURABAHA" onclick="composant();"> </td>
+
+<td>   <input type="button"  class="button8" value="EQUIPEMENT" onclick="equipement();"> </td>
+
+</tr>
+
+</table>
+
+<span id="sous_text" style="display: none;">
+<p>
+La Mourabaha automobile est un contrat de finance islamique dans laquelle la banque achète la voiture neuve choisie par le client, puis elle revend la voiture au client avec une facilité de paiement et un bénéfice. Le règlement se fait par échéances égales sur plusieurs années.</p>
+</span>
+
+
+ <span id="sous_composant" style="display: none;">
+<p>
+Les propriétaires de véhicules achetés durant et après l’Auto-Expo à travers un financement participatif rencontrent des difficultés à obtenir les cartes grises. Un problème qui est en cours de résolution, à en croire des patrons de banques participatives sondés par Médias24. </p>
+</span>
+
+
+<span id="sous_equipment" style="display: none; ">
+<p>
+Les propriétaires de véhicules achetés durant et après l’Auto-Expo à travers un financement participatif rencontrent des difficultés à obtenir les cartes grises. Un problème qui est en cours de résolution, à en croire des patrons de banques participatives sondés par Médias24. </p>
+</span>
+
+
+
+
+
+</span>
+
+<br/>
+
+
+<span id="image" style="display: none;">
+
+<img src="{{ url_for('data',filename="/home/hajji/Documents/15.jpg" )}}" >
+
+</span><br/>
+
+</center> </h2>
+
+</body>
+
+</html>
